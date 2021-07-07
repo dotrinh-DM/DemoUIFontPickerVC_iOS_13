@@ -39,6 +39,9 @@
                             <constraint firstItem="Lhp-bD-fgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhA-Ab-Ue1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="realtimeSelect" destination="88v-JT-1aR" id="1Ql-WS-PaW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

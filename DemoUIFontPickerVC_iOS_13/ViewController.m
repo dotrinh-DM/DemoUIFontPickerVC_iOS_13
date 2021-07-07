@@ -8,6 +8,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *realtimeSelect;
 
 @end
 
@@ -18,11 +19,11 @@ UIFontPickerViewController *uiFontVC;
 - (void)viewDidLoad {
     [super viewDidLoad];
     uiFontVC = [[UIFontPickerViewController alloc] init];
-    NSArray *yourArray =  UIFont.familyNames;
     uiFontVC.delegate = self;
-    for (int i = 0; i < yourArray.count; i++) {
-        NSLog(@"%@", yourArray[i]);
-    }
+//    NSArray *yourArray =  UIFont.familyNames;
+//    for (int i = 0; i < yourArray.count; i++) {
+//        NSLog(@"%@", yourArray[i]);
+//    }
 }
 
 - (IBAction)showList:(id)sender {
@@ -35,5 +36,6 @@ UIFontPickerViewController *uiFontVC;
 {
     UIFontDescriptor *selectedFontDescriptor = viewController.selectedFontDescriptor;
     NSLog(@"selected: %@",selectedFontDescriptor.postscriptName);
+    _realtimeSelect.text = selectedFontDescriptor.postscriptName;
 }
 @end
