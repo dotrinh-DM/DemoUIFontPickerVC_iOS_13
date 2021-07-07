@@ -29,13 +29,22 @@
                                     <action selector="showList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQp-Cy-qw5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngy-VO-849">
+                                <rect key="frame" x="180.5" y="573" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshFontList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUp-Mn-Enp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="88v-JT-1aR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="823-Pd-8JC"/>
+                            <constraint firstItem="ngy-VO-849" firstAttribute="top" secondItem="Lhp-bD-fgn" secondAttribute="bottom" constant="21" id="DZz-90-aKZ"/>
                             <constraint firstItem="Lhp-bD-fgn" firstAttribute="top" secondItem="88v-JT-1aR" secondAttribute="bottom" constant="63.5" id="Jzb-M3-X6v"/>
                             <constraint firstItem="88v-JT-1aR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mre-xB-uSF"/>
+                            <constraint firstItem="ngy-VO-849" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fde-KN-PpE"/>
                             <constraint firstItem="Lhp-bD-fgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhA-Ab-Ue1"/>
                         </constraints>
                     </view>
