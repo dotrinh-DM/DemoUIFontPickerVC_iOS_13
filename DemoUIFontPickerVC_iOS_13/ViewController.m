@@ -24,6 +24,12 @@ UIFontPickerViewController *uiFontVC;
 //    for (int i = 0; i < yourArray.count; i++) {
 //        NSLog(@"%@", yourArray[i]);
 //    }
+    for (NSString *family in [UIFont familyNames]) {
+        NSLog(@"%@", family);
+        for (NSString *name in [UIFont fontNamesForFamilyName:family]) {
+            NSLog(@"\t%@", name);
+        }
+    }
 }
 
 - (IBAction)showList:(id)sender {
