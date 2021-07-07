@@ -20,10 +20,12 @@ UIFontPickerViewController *uiFontVC;
     [super viewDidLoad];
     uiFontVC = [[UIFontPickerViewController alloc] init];
     uiFontVC.delegate = self;
-//    NSArray *yourArray =  UIFont.familyNames;
-//    for (int i = 0; i < yourArray.count; i++) {
-//        NSLog(@"%@", yourArray[i]);
-//    }
+    
+    /**
+     After select font in UIFontPickerViewController list,
+     then [UIFont familyNames] will get installed fonts from other apps
+     */
+    
     for (NSString *family in [UIFont familyNames]) {
         NSLog(@"%@", family);
         for (NSString *name in [UIFont fontNamesForFamilyName:family]) {
